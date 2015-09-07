@@ -16,12 +16,6 @@
 </head>
 <body>
 <div class="main-wrapper">
-	<!-- 页面左侧 -->
-<!-- 	<div class="left-bar">
-		
-	</div> -->
-
-	<!-- 页面右侧 -->
 	<div class="right-bar">
 		<!-- 页头 -->
 		<header>
@@ -44,23 +38,10 @@
                 </div>
             </div>
         <?php } ?>
-
-
-<!--             <div class="m-post">
-                <div class="cont">
-                    <div class="img">
-                    	<a href="#"><img src="http://imglf0.nosdn.127.net/img/eVlJTVptOXE0Wko4YTF0cVBSdFVjWjF3Skk3T1Bzd2cwcVdlNTFJeE10cz0.jpg?imageView&amp;thumbnail=1680x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg"></a>
-                    </div>
-                </div>
-                <div class="subinfo">
-                    <span>August</span>
-                </div>
-            </div> -->
 		</div>
-
 		<!-- 页脚 -->
 		<div class="footer">
-			版权所有 ©2015 <a href="./">憶年華</a>	| 站点由 <a href="https://github.com/zhowan/wyunh">Wong</a> 驱动
+			版权所有 ©2015 <a href="./">憶年華</a>	| Author by <a href="https://github.com/zhowan/wyunh">Wong</a>
 		</div>
 			
 	</div>
