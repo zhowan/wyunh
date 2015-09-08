@@ -30,7 +30,7 @@
             <div class="m-post">
                 <div class="cont">
                     <div class="img">
-                    	<a href="#"><img src="<?php echo $row['imgPath']; ?>"></a>
+                    	<a href="./post.php?postcard_id=<?php echo $row['id']; ?>"><img src="<?php echo $row['imgPath']; ?>"></a>
                     </div>
                 </div>
                 <div class="subinfo">
