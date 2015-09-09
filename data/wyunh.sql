@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.12
+-- version 4.4.14
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-08-21 10:18:22
--- 服务器版本： 5.6.25
--- PHP Version: 5.6.11
+-- Generation Time: 2015-09-09 12:34:35
+-- 服务器版本： 5.6.26
+-- PHP Version: 5.5.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -29,16 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `nh_img` (
   `id` int(10) unsigned NOT NULL,
   `imgName` varchar(50) NOT NULL,
-  `imgPath` text NOT NULL
+  `imgPath` text NOT NULL,
+  `mp3Name` varchar(50) NOT NULL,
+  `mp3Path` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `nh_img`
 --
 
-INSERT INTO `nh_img` (`id`, `imgName`, `imgPath`) VALUES
-(1, '五邑大學', 'http://7xizst.com1.z0.glb.clouddn.com/post_01.jpg'),
-(2, '北仰星空', 'http://7xizst.com1.z0.glb.clouddn.com/post_02.jpg');
+INSERT INTO `nh_img` (`id`, `imgName`, `imgPath`, `mp3Name`, `mp3Path`) VALUES
+(1, '五邑大學', 'http://7xizst.com1.z0.glb.clouddn.com/post_01.jpg', '给所有知道我名字的人 - 羽·泉', 'http://7xizst.com1.z0.glb.clouddn.com/01.给所有知道我名字的人%20-%20羽·泉.mp3'),
+(2, '北仰星空', 'http://7xizst.com1.z0.glb.clouddn.com/post_02.jpg', '夜空中最亮的星 - 逃跑计划', 'http://7xizst.com1.z0.glb.clouddn.com/02.夜空中最亮的星%20-%20逃跑计划.mp3');
 
 --
 -- Indexes for dumped tables

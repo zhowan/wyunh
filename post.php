@@ -8,18 +8,20 @@
     $conn = db_connect();
     $conn->set_charset("utf8");
     //从数据库读取图片url,然后存入数组，从数组中随机抽取一个图片做背景
-    $sql = "SELECT imgPath FROM nh_img WHERE id = $postcard_id";
+    $sql = "SELECT imgName,imgPath,mp3Name,mp3Path FROM nh_img WHERE id = $postcard_id";
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) {
-    	$bg_file[] = $row[imgPath];
+    	$bg_file = $row['imgPath'];//明信片url，作背景图
+    	$imgName = $row['imgName'];//明信片名字
+    	$musicTitle = $row['mp3Name'];//音乐标题
+    	$musicUrl = $row['mp3Path'];//音乐url
     }
-    // print_r($bg_file);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>憶·年華工作室|憶大年華明信片</title>
+	<title><?php echo $imgName; ?>憶·年華工作室|憶大年華明信片</title>
 	<meta name="viewport" content="width=device-width,user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="./styles/post.css">
@@ -36,8 +38,7 @@
 		var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
 		{	
 			// 音乐url
-			m4a: "http://7xizst.com1.z0.glb.clouddn.com/Colbie%20Caillat%20-%20Try.mp3",
-			oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+			m4a: "<?php echo $musicUrl; ?>",
 		}, {
 			cssSelectorAncestor: "#cp_container_1",
 			swfPath: "./jPlayer/dist/jplayer",
@@ -49,7 +50,7 @@
 	</script>
 	<style type="text/css">
 		body {
-			background-image: url(<?php echo $bg_file[0]; ?>);
+			background-image: url(<?php echo $bg_file; ?>);
 		}
 	</style>
 </head>
@@ -57,7 +58,7 @@
 	<!-- <div class="main-wrapper"> -->
 		<header>
 			<div class="banner">
-				<h1>憶大年華明信片</h1>
+				<h1><?php echo $imgName; ?></h1>
 			</div>
 		</header>
 
@@ -79,10 +80,11 @@
 			</ul>
 		</div>
 	<!-- 播放器结束 -->
+		<p class="musicTitle"><strong><?php echo $musicTitle; ?></strong></p>
 	<!-- </div> -->
 
 	<footer class="footer">
-		©2015 <a href="./"><strong>憶年華</strong></a> | Author by <a href="https://github.com/zhowan/wyunh"><strong>Wong</strong></a>
+		版权所有©2015 <a href="./"><strong>憶年華</strong></a> | Author by <a href="https://github.com/zhowan/wyunh"><strong>Wong</strong></a>
 	</footer>
 </body>
 </html>

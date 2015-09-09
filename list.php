@@ -30,11 +30,11 @@
             <div class="m-post">
                 <div class="cont">
                     <div class="img">
-                    	<a href="./post.php?postcard_id=<?php echo $row['id']; ?>"><img src="<?php echo $row['imgPath']; ?>"></a>
+                    	<a href="./post.php?postcard_id=<?php echo $row['id']; ?>"><img src="<?php echo $row['imgPath'];//明信片路径 ?>"></a>
                     </div>
                 </div>
                 <div class="subinfo">
-                    <span><?php echo $row['imgName']; ?></span>
+                    <span><?php echo $row['imgName'];//明信片名字 ?></span>
                 </div>
             </div>
         <?php } ?>

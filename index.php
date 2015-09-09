@@ -6,7 +6,7 @@
     $sql = "SELECT imgPath FROM nh_img";
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) {
-    	$bg_file[] = $row[imgPath];
+    	$bg_file[] = $row['imgPath'];//
     }
 /*
     //从目录读取图片文件名，然后存入数组，从数组中随机抽取一个图片做背景
