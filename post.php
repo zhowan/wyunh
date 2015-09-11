@@ -82,9 +82,9 @@
 	<!-- 播放器结束 -->
 		<p class="musicTitle"><strong><?php echo $musicTitle; ?></strong></p>
 	<!-- </div> -->
-
-	<footer class="footer">
-		版权所有©2015 <a href="./"><strong>憶年華</strong></a> | Author by <a href="https://github.com/zhowan/wyunh"><strong>Wong</strong></a>
-	</footer>
+	<?php 
+		$conn->close(); 
+		require_once('./includes/footer.php');
+	?>
 </body>
 </html>

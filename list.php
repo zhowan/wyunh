@@ -37,13 +37,13 @@
                     <span><?php echo $row['imgName'];//明信片名字 ?></span>
                 </div>
             </div>
-        <?php } ?>
+        <?php 
+			} 
+			$conn->close();
+		?>
 		</div>
 		<!-- 页脚 -->
-		<div class="footer">
-			版权所有 ©2015 <a href="./">憶年華</a>	| Author by <a href="https://github.com/zhowan/wyunh">Wong</a>
-		</div>
-			
+		<?php require_once('./includes/footer.php'); ?>
 	</div>
 </div>
 </body>

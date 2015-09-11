@@ -53,8 +53,6 @@
 		</div>
 	</div>
 
-	<footer class="footer">
-		©2015 <a href="./"><strong>憶年華</strong></a> | Author by <a href="https://github.com/zhowan/wyunh"><strong>Wong</strong></a>
-	</footer>
+	<?php require_once('./includes/footer.php'); ?>
 </body>
 </html>

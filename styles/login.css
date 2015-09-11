@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #47a3da;
+}
+.main-wrapper {
+	width: 70%;
+	max-width: 450px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	bottom: 10px;
+}
+header {
+	width: 100%;
+	max-width: 450px;
+	margin: 20px auto;
+}
+
+header img {
+	width: 100%;
+
+}
+
+.container {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+	background-color: #aff;
+	text-align: center;
+}
+.cbp-mc-form {
+	width: 80%;
+	
+	display: inline-block;
+	margin: auto auto;
+}
+.cbp-mc-column,
+.cbp-mc-submit-wrap,
+.cbp-mc-column input,
+.cbp-mc-submit-wrap input {
+	width: 100%;
+}
+
+.cbp-mc-column input {
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.cbp-mc-submit-wrap input {
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #47a3da;
+}
+
+
+footer {
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	bottom: 0px;
+}
+footer a {
+	color: #fff;
+}
