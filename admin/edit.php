@@ -41,7 +41,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>憶·年華工作室|憶大年華明信片</title>
+	<title>明信片</title>
 	<meta name="viewport" content="width=device-width,user-scalable=no" />
 </head>
 <body>

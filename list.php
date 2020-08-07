@@ -9,7 +9,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>憶·年華工作室|憶大年華明信片</title>
+	<title>明信片</title>
 	<meta name="viewport" content="width=device-width,user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="./styles/list.css">
@@ -20,7 +20,7 @@
 		<!-- 页头 -->
 		<header>
 			<div class="banner">
-				<h1>憶大年華明信片</h1>
+				<h1>明信片</h1>
 			</div>
 		</header>
 

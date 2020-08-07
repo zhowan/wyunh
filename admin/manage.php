@@ -16,7 +16,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>憶·年華工作室|憶大年華明信片</title>
+	<title>明信片</title>
 	<meta name="viewport" content="width=device-width,user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="../styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="../styles/manage.css">
@@ -32,7 +32,7 @@
 		<p><h3><?php echo $postNum++ . '-' . $row['imgName']; ?></h3></p>
 		<p><a href="edit.php?id=<?php echo $row['id']; ?>">修改</a> | <a href="del.php?id=<?php echo $row['id']; ?>">删除</a></p>
 		<p><?php echo $row['imgPath']; ?></p>
-		<img class="post-img" src="<?php echo $row['imgPath']; ?>" >
+		<img class="post-img" src="../<?php echo $row['imgPath']; ?>" >
 		<p><?php echo $row['mp3Name']; ?></p>
 		<audio src="<?php echo $row['mp3Path']; ?>" controls="controls" preload="none">
 			Your browser does not support the audio element.
